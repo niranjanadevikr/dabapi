@@ -10,7 +10,7 @@
   "runtime": {
     "rest": {
       "enabled": true,
-      "path": "/rest",
+      "path": "/api",
       "request-body-strict": true
     },
     "graphql": {
@@ -44,9 +44,10 @@
         }
       },
       "rest": {
-        "enabled": true
+        "enabled": true,
+        "path": "Employees"
       },
-      "permissions": [
+      "permissions": [ 
         {
           "role": "anonymous",
           "actions": [
