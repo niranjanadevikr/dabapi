@@ -42,5 +42,28 @@
     }
   },
   "autoentities": {},
-  "entities": {}
+   "entities": {
+    "Employees": {
+    "source": {
+      "object": "dbo.Employees",
+      "type": "table"
+    },
+    "rest": {
+      "enabled": true,
+      "path": "Employees"
+    },
+    "graphql": {
+      "enabled": true
+    },
+    "permissions": [
+      {
+        "role": "anonymous",
+        "actions": [
+          { "action": "*" }
+        ]
+      }
+    ]
+  }
+   }
+  
 }
